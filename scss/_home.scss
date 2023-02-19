@@ -1,0 +1,137 @@
+.s-kanto {
+    padding-top: 33.5rem;
+    margin-left: 7.4rem;
+    padding-bottom: 19.2rem;
+    background-image: url(../img/bg-kanto.png);
+    background-size: cover;
+    @media(max-width: 991px) {
+        background-size: cover;
+        h1 {
+            font-size: 6.5rem;
+        }
+    }
+    @media(max-width: 560px) {
+        margin: 0;
+        padding-top: 4.5rem;
+        h1 {
+            font-size: 2.6rem;
+            line-height: 4rem;
+            margin-left: 1.4rem;
+            margin-bottom: -15.4rem;
+            margin-top: 4.4rem;
+        }
+    }
+}
+
+.s-card {
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/bg-card.png);
+    .container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .info-api {
+            padding-top: 4.2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            .api-block {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 53.4rem;
+            height: 10.4rem;
+            background: #000000;
+            border: 0.3rem solid #FFFFFF;
+            border-radius: 1rem;
+            margin-bottom: 42px;
+            }
+        }
+        .container-cards {
+            .cards {
+                display: flex;
+                gap: 20px;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: center;
+                gap: 135px;
+                margin-bottom: 42px;
+                .card {
+                width: 33.6rem;
+                height: 50.8rem;
+                background: #000000;
+                border: 0.5rem solid #FFFFFF;
+                border-radius: 5.8rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                h5 {
+                transform: translateX(-105px);
+                margin-top: -10px;
+                }
+                .pokemon-img {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img {
+                        width: 245px;
+                        height: 100%;
+                    }
+                }
+                #pokemon-type {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 94px;
+                    height: 25px;
+                    border-radius: 5px;
+                    margin-bottom: 14px;
+                }
+                .stats {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 25px;
+                    margin-top: 18px;
+                    .left {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 14px;
+                    }
+                    .right {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        gap: 14px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        .container {
+        .info-api {
+            .api-block {
+                width: 34.4rem;
+                height: 7rem;
+                h2 {
+                    font-size: 3.5rem;
+                }
+                img {
+                    width: 165px;
+                    height: 60px;
+                }
+            }
+        }
+    }
+    }
+}
